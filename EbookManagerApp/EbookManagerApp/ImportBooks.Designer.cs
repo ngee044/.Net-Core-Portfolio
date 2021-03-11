@@ -28,8 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportBooks));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "docx16.png");
+            this.imageList1.Images.SetKeyName(1, "docxx16.png");
+            this.imageList1.Images.SetKeyName(2, "epubx16.png");
+            this.imageList1.Images.SetKeyName(3, "folder_exp_x16.png");
+            this.imageList1.Images.SetKeyName(4, "folder-close-x16.png");
+            this.imageList1.Images.SetKeyName(5, "pdfx16.png");
             // 
             // ImportBooks
             // 
@@ -44,5 +57,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

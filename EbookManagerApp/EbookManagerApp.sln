@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookManagerApp", "EbookMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager.Engine", "eBookManager.Engine\eBookManager.Engine.csproj", "{1EE2E3AA-9A84-49BA-B19D-45F75F010407}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager.Helper", "eBookManager.Helper\eBookManager.Helper.csproj", "{22A2EC4F-32D8-4DA9-B4B4-38C4E0F578E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1EE2E3AA-9A84-49BA-B19D-45F75F010407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE2E3AA-9A84-49BA-B19D-45F75F010407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE2E3AA-9A84-49BA-B19D-45F75F010407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A2EC4F-32D8-4DA9-B4B4-38C4E0F578E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A2EC4F-32D8-4DA9-B4B4-38C4E0F578E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A2EC4F-32D8-4DA9-B4B4-38C4E0F578E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A2EC4F-32D8-4DA9-B4B4-38C4E0F578E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
