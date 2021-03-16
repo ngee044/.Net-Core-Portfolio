@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACq
-        FgAAAk1TRnQBSQFMAgEBBgEAAQgBAAEIAQABEAEAARABAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        FgAAAk1TRnQBSQFMAgEBBgEAAUgBAAFIAQABEAEAARABAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEQBgABECAAAf8BfwHeAXsBvAF3AZkBdwHeAXsIAAH/AX8B3gF7AZwBcwF7AW8BewFv
         AXsBbwF7AW8BewFvAXsBbwF7AW8BewFvAb0BdwHeAXsB3gF7Af8BfwH/AX9EAAH/AX8BvAF3AZoDdwFT
         AXMBDwFvAe4BbgHNAW4BzQFqAZwBdwH/AX8IAAG+AXcB3wF7Ad4BdwG+AXcBvgF3Ab4BdwG+AXMBnQFz
@@ -225,6 +225,26 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddNewStorageSpace.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAMVJREFUOE+lkrENwyAQRT1CRoro2SGKt6B16lA7DOWGPUgaKB0+0iHAhx0rJz0Z
+        +PyvAzOgQghX7/1KpMVfqzQLIc6HlGbiVEhrLkNid7f4XSiwYIGWA0BrBtba1RhTaQBr0OIe3b0D4u0+
+        LPqpk566aP8CKMO4gGl6JI0NKNvFfJ5fFeN9zFr3CO2YA1oOaIUjM6gCaDONab4H9rB3wHXFkQPacs5d
+        IEopWSOA1g1ARVHjsSilNmas5Ye0V/Eox0/5vxqGL9gCI2vtoCCJAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnAddBookToStorageSpace.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAIFJREFUOE+VjjEOwCAIRXuoDp09nEMv0SO2XVhtvoEGFRVJXjTgf7hJEVHScNtf
+        CB3nnlkS6K1aMOHieLm5BrMQQkGMsZTMBM/9/pgSvmR0ULAEWpJ/gaoFOmAJQCPQSKhHI5BCE0N5ZOEW
+        jHAJcFq4BSNcApw1S4IRU4GHrsAPpQ9YIUnc0EPhQgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>99</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAQAAEABAAoAQAAJgAAABAQAAABAAgAaAUAAE4BAAAoAAAAEAAAACAAAAABAAQAAAAAAIAA
