@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportBooks));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tvImages = new System.Windows.Forms.ImageList(this.components);
+            this.tvFoundBooks = new System.Windows.Forms.TreeView();
             this.btnSelectSourceFolder = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -43,30 +43,30 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.DlVirtualStorageSpaces = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dtCreated = new System.Windows.Forms.DateTimePicker();
+            this.dtLastAccessed = new System.Windows.Forms.DateTimePicker();
+            this.txtFileSize = new System.Windows.Forms.TextBox();
+            this.txtFilePath = new System.Windows.Forms.TextBox();
+            this.txtExtension = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFileName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtDatePublished = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dlClassification = new System.Windows.Forms.TextBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtPublisher = new System.Windows.Forms.TextBox();
+            this.txtAuthor = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.btnAddBookToStorageSpace = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -78,23 +78,24 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // imageList1
+            // tvImages
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "docx16.png");
-            this.imageList1.Images.SetKeyName(1, "docxx16.png");
-            this.imageList1.Images.SetKeyName(2, "epubx16.png");
-            this.imageList1.Images.SetKeyName(3, "folder_exp_x16.png");
-            this.imageList1.Images.SetKeyName(4, "folder-close-x16.png");
-            this.imageList1.Images.SetKeyName(5, "pdfx16.png");
+            this.tvImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("tvImages.ImageStream")));
+            this.tvImages.TransparentColor = System.Drawing.Color.Transparent;
+            this.tvImages.Images.SetKeyName(0, "docx16.png");
+            this.tvImages.Images.SetKeyName(1, "docxx16.png");
+            this.tvImages.Images.SetKeyName(2, "epubx16.png");
+            this.tvImages.Images.SetKeyName(3, "folder_exp_x16.png");
+            this.tvImages.Images.SetKeyName(4, "folder-close-x16.png");
+            this.tvImages.Images.SetKeyName(5, "pdfx16.png");
             // 
-            // treeView1
+            // tvFoundBooks
             // 
-            this.treeView1.Location = new System.Drawing.Point(24, 55);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(528, 213);
-            this.treeView1.TabIndex = 0;
+            this.tvFoundBooks.Location = new System.Drawing.Point(24, 55);
+            this.tvFoundBooks.Name = "tvFoundBooks";
+            this.tvFoundBooks.Size = new System.Drawing.Size(528, 213);
+            this.tvFoundBooks.TabIndex = 0;
+            this.tvFoundBooks.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvFoundBooks_AfterSelect);
             // 
             // btnSelectSourceFolder
             // 
@@ -194,17 +195,17 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.dtCreated);
+            this.groupBox2.Controls.Add(this.dtLastAccessed);
+            this.groupBox2.Controls.Add(this.txtFileSize);
+            this.groupBox2.Controls.Add(this.txtFilePath);
+            this.groupBox2.Controls.Add(this.txtExtension);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtFileName);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(575, 55);
             this.groupBox2.Name = "groupBox2";
@@ -213,40 +214,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "File details";
             // 
-            // dateTimePicker2
+            // dtCreated
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(144, 115);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(308, 21);
-            this.dateTimePicker2.TabIndex = 2;
+            this.dtCreated.Location = new System.Drawing.Point(144, 115);
+            this.dtCreated.Name = "dtCreated";
+            this.dtCreated.Size = new System.Drawing.Size(308, 21);
+            this.dtCreated.TabIndex = 2;
             // 
-            // dateTimePicker1
+            // dtLastAccessed
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(308, 21);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtLastAccessed.Location = new System.Drawing.Point(144, 88);
+            this.dtLastAccessed.Name = "dtLastAccessed";
+            this.dtLastAccessed.Size = new System.Drawing.Size(308, 21);
+            this.dtLastAccessed.TabIndex = 2;
             // 
-            // textBox5
+            // txtFileSize
             // 
-            this.textBox5.Location = new System.Drawing.Point(144, 180);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(308, 21);
-            this.textBox5.TabIndex = 1;
+            this.txtFileSize.Location = new System.Drawing.Point(144, 180);
+            this.txtFileSize.Name = "txtFileSize";
+            this.txtFileSize.Size = new System.Drawing.Size(308, 21);
+            this.txtFileSize.TabIndex = 1;
             // 
-            // textBox4
+            // txtFilePath
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(308, 21);
-            this.textBox4.TabIndex = 1;
+            this.txtFilePath.Location = new System.Drawing.Point(144, 147);
+            this.txtFilePath.Name = "txtFilePath";
+            this.txtFilePath.Size = new System.Drawing.Size(308, 21);
+            this.txtFilePath.TabIndex = 1;
             // 
-            // textBox3
+            // txtExtension
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(308, 21);
-            this.textBox3.TabIndex = 1;
+            this.txtExtension.Location = new System.Drawing.Point(144, 61);
+            this.txtExtension.Name = "txtExtension";
+            this.txtExtension.Size = new System.Drawing.Size(308, 21);
+            this.txtExtension.TabIndex = 1;
             // 
             // label6
             // 
@@ -293,12 +294,12 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "File extension:";
             // 
-            // textBox2
+            // txtFileName
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 21);
-            this.textBox2.TabIndex = 1;
+            this.txtFileName.Location = new System.Drawing.Point(144, 27);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(308, 21);
+            this.txtFileName.TabIndex = 1;
             // 
             // label1
             // 
@@ -311,17 +312,17 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
+            this.groupBox3.Controls.Add(this.dtDatePublished);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.dlClassification);
+            this.groupBox3.Controls.Add(this.txtCategory);
+            this.groupBox3.Controls.Add(this.txtISBN);
+            this.groupBox3.Controls.Add(this.txtPrice);
+            this.groupBox3.Controls.Add(this.txtPublisher);
+            this.groupBox3.Controls.Add(this.txtAuthor);
+            this.groupBox3.Controls.Add(this.txtTitle);
             this.groupBox3.Controls.Add(this.btnAddBookToStorageSpace);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label10);
@@ -335,12 +336,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Book details";
             // 
-            // dateTimePicker3
+            // dtDatePublished
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(133, 171);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(308, 21);
-            this.dateTimePicker3.TabIndex = 2;
+            this.dtDatePublished.Location = new System.Drawing.Point(133, 171);
+            this.dtDatePublished.Name = "dtDatePublished";
+            this.dtDatePublished.Size = new System.Drawing.Size(308, 21);
+            this.dtDatePublished.TabIndex = 2;
             // 
             // label14
             // 
@@ -369,54 +370,54 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Date published:";
             // 
-            // textBox12
+            // dlClassification
             // 
-            this.textBox12.Location = new System.Drawing.Point(133, 225);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(308, 21);
-            this.textBox12.TabIndex = 1;
+            this.dlClassification.Location = new System.Drawing.Point(133, 225);
+            this.dlClassification.Name = "dlClassification";
+            this.dlClassification.Size = new System.Drawing.Size(308, 21);
+            this.dlClassification.TabIndex = 1;
             // 
-            // textBox11
+            // txtCategory
             // 
-            this.textBox11.Location = new System.Drawing.Point(133, 198);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(308, 21);
-            this.textBox11.TabIndex = 1;
+            this.txtCategory.Location = new System.Drawing.Point(133, 198);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(308, 21);
+            this.txtCategory.TabIndex = 1;
             // 
-            // textBox10
+            // txtISBN
             // 
-            this.textBox10.Location = new System.Drawing.Point(133, 144);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(308, 21);
-            this.textBox10.TabIndex = 1;
+            this.txtISBN.Location = new System.Drawing.Point(133, 144);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(308, 21);
+            this.txtISBN.TabIndex = 1;
             // 
-            // textBox9
+            // txtPrice
             // 
-            this.textBox9.Location = new System.Drawing.Point(133, 117);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(308, 21);
-            this.textBox9.TabIndex = 1;
+            this.txtPrice.Location = new System.Drawing.Point(133, 117);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(308, 21);
+            this.txtPrice.TabIndex = 1;
             // 
-            // textBox8
+            // txtPublisher
             // 
-            this.textBox8.Location = new System.Drawing.Point(133, 90);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(308, 21);
-            this.textBox8.TabIndex = 1;
+            this.txtPublisher.Location = new System.Drawing.Point(133, 90);
+            this.txtPublisher.Name = "txtPublisher";
+            this.txtPublisher.Size = new System.Drawing.Size(308, 21);
+            this.txtPublisher.TabIndex = 1;
             // 
-            // textBox7
+            // txtAuthor
             // 
-            this.textBox7.Location = new System.Drawing.Point(133, 63);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(308, 21);
-            this.textBox7.TabIndex = 1;
+            this.txtAuthor.Location = new System.Drawing.Point(133, 63);
+            this.txtAuthor.Name = "txtAuthor";
+            this.txtAuthor.Size = new System.Drawing.Size(308, 21);
+            this.txtAuthor.TabIndex = 1;
             // 
-            // textBox6
+            // txtTitle
             // 
-            this.textBox6.Location = new System.Drawing.Point(133, 31);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(308, 21);
-            this.textBox6.TabIndex = 1;
+            this.txtTitle.Location = new System.Drawing.Point(133, 31);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(308, 21);
+            this.txtTitle.TabIndex = 1;
             // 
             // btnAddBookToStorageSpace
             // 
@@ -482,7 +483,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSelectSourceFolder);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.tvFoundBooks);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ImportBooks";
             this.Text = "ImportBooks";
@@ -498,8 +499,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ImageList tvImages;
+        private System.Windows.Forms.TreeView tvFoundBooks;
         private System.Windows.Forms.Button btnSelectSourceFolder;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancelNewStorageSpace;
@@ -512,30 +513,30 @@
         private System.Windows.Forms.Label lblStorageSpaceDescription;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker dtCreated;
+        private System.Windows.Forms.DateTimePicker dtLastAccessed;
+        private System.Windows.Forms.TextBox txtExtension;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFileName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtFileSize;
+        private System.Windows.Forms.TextBox txtFilePath;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtDatePublished;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox dlClassification;
+        private System.Windows.Forms.TextBox txtCategory;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtPublisher;
+        private System.Windows.Forms.TextBox txtAuthor;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnAddBookToStorageSpace;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;

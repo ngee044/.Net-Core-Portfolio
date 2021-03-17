@@ -8,7 +8,7 @@ using static System.ValueTuple;
 
 namespace eBookManager.Engine
 {
-    class DocumentEngine
+    public class DocumentEngine
     {
         public (DateTime dateCreated, DateTime dateLastAccessed, string fileName, string fileExtension, long fileLength, bool error)
             GetFileProperites (string filePath)
