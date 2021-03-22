@@ -67,11 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="eBookManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="eBookManager.Designer.cs">
+      <DependentUpon>eBookManager.cs</DependentUpon>
     </Compile>
     <Compile Include="ImportBooks.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="eBookManager.resx">
+      <DependentUpon>eBookManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImportBooks.resx">
       <DependentUpon>ImportBooks.cs</DependentUpon>
     </EmbeddedResource>
